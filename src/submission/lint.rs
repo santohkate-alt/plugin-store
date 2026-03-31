@@ -839,6 +839,7 @@ fn check_external_urls(content: &str, plugin: &PluginYaml, diags: &mut Vec<LintD
     ];
 
     let lower = content.to_lowercase();
+    let declared_apis = &plugin.api_calls;
 
     let fetch_patterns = [
         "download from", "fetch from", "load from", "get from",
@@ -880,13 +881,19 @@ fn check_external_urls(content: &str, plugin: &PluginYaml, diags: &mut Vec<LintD
         if lower.contains(pattern) {
             for url in &urls {
                 if !safe_domains.iter().any(|d| url.contains(d)) {
+                    // If the URL is declared in api_calls, downgrade to warning
+                    let is_declared = declared_apis.iter().any(|d| url.contains(d.as_str()));
                     diags.push(LintDiag {
-                        level: DiagLevel::Error,
-                        code: "E141",
+                        level: if is_declared { DiagLevel::Warning } else { DiagLevel::Error },
+                        code: if is_declared { "W141" } else { "E141" },
                         message: format!(
-                            "SKILL.md instructs AI to send/post data to external URL '{}'. \
-                             This may exfiltrate user data (wallet addresses, balances, etc.).",
-                            url
+                            "SKILL.md instructs AI to send/post data to external URL '{}'. {}",
+                            url,
+                            if is_declared {
+                                "Declared in api_calls — reviewer should verify this is intentional."
+                            } else {
+                                "This may exfiltrate user data (wallet addresses, balances, etc.)."
+                            }
                         ),
                     });
                     break;
