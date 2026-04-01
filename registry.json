@@ -141,11 +141,34 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/okx-buildx-hackathon-agent-track",
-          "commit": "1f82d36371c1821cc20c631f7f822b3612ffb317"
+          "commit": "e74c08dc3bd260e5cc620522c21b90f7f849caa5"
         }
       },
       "link": "https://github.com/okx/plugin-store-community",
       "alias": "OKX Build X Hackathon"
+    },
+    {
+      "name": "ranking-sniper",
+      "version": "1.0.0",
+      "description": "Ranking Sniper Strategy — monitors DEX leaderboard for newly listed tokens with safety checks",
+      "author": {
+        "name": "yz06276"
+      },
+      "category": "trading-strategy",
+      "tags": [
+        "ranking",
+        "sniper",
+        "solana"
+      ],
+      "type": "community-developer",
+      "components": {
+        "skill": {
+          "repo": "okx/plugin-store-community",
+          "dir": "skills/ranking-sniper",
+          "commit": "e74c08dc3bd260e5cc620522c21b90f7f849caa5"
+        }
+      },
+      "link": "https://github.com/okx/plugin-store-community"
     },
     {
       "name": "scan-live",
@@ -166,7 +189,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/scan-live",
-          "commit": "1f82d36371c1821cc20c631f7f822b3612ffb317"
+          "commit": "e74c08dc3bd260e5cc620522c21b90f7f849caa5"
         },
         "python": {
           "source_repo": "yz06276/scan-live",
@@ -204,11 +227,34 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/smart-money-copy-trade",
-          "commit": "1f82d36371c1821cc20c631f7f822b3612ffb317"
+          "commit": "e74c08dc3bd260e5cc620522c21b90f7f849caa5"
         }
       },
       "link": "https://github.com/okx/plugin-store-community",
       "alias": "Smart Money Copy Trade"
+    },
+    {
+      "name": "smart-signal",
+      "version": "1.0.0",
+      "description": "Smart Money Signal Strategy — tracks smart money, KOL, and whale buy signals with risk control",
+      "author": {
+        "name": "yz06276"
+      },
+      "category": "trading-strategy",
+      "tags": [
+        "signal",
+        "smart-money",
+        "solana"
+      ],
+      "type": "community-developer",
+      "components": {
+        "skill": {
+          "repo": "okx/plugin-store-community",
+          "dir": "skills/smart-signal",
+          "commit": "e74c08dc3bd260e5cc620522c21b90f7f849caa5"
+        }
+      },
+      "link": "https://github.com/okx/plugin-store-community"
     }
   ]
 }
