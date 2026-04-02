@@ -139,7 +139,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/meme-trench-scanner",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -164,7 +164,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/okx-buildx-hackathon-agent-track",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community",
@@ -188,7 +188,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/smart-money-signal-copy-trade",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -211,7 +211,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/top-rank-tokens-sniper",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -237,7 +237,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-cca-configurator",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -264,7 +264,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-cca-deployer",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -291,7 +291,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-liquidity-planner",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -318,7 +318,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-pay-with-any-token",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -345,7 +345,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-swap-integration",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -372,7 +372,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-swap-planner",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -399,7 +399,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-v4-security-foundations",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
@@ -426,7 +426,7 @@
         "skill": {
           "repo": "okx/plugin-store-community",
           "dir": "skills/uniswap-viem-integration",
-          "commit": "50b527eeb56375221755f52907271e7c695e9c44"
+          "commit": "171f4adf33a2667fd8ff5f6fcabe8b83c6f2b0d1"
         }
       },
       "link": "https://github.com/okx/plugin-store-community"
