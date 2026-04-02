@@ -157,7 +157,7 @@
         "uniswap",
         "moltbook"
       ],
-      "type": "community-developer",
+      "type": "official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -229,7 +229,7 @@
         "smart-contracts",
         "ethereum"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -256,7 +256,7 @@
         "smart-contracts",
         "ethereum"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -283,7 +283,7 @@
         "deep-links",
         "ethereum"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -310,7 +310,7 @@
         "defi",
         "ethereum"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -337,7 +337,7 @@
         "permit2",
         "ethereum"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -364,7 +364,7 @@
         "ethereum",
         "multichain"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -391,7 +391,7 @@
         "solidity",
         "ethereum"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
@@ -418,7 +418,7 @@
         "typescript",
         "smart-contracts"
       ],
-      "type": "community-developer",
+      "type": "dapp-official",
       "components": {
         "skill": {
           "repo": "okx/plugin-store-community",
