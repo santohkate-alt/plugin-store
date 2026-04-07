@@ -190,16 +190,16 @@ Five supported languages for source code:
 ### Step 1: Fork and scaffold
 
 ```bash
-# Fork https://github.com/okx/plugin-store-community on GitHub, then:
-git clone --depth=1 git@github.com:YOUR_USERNAME/plugin-store-community.git
-cd plugin-store-community
+# Fork https://github.com/okx/plugin-store on GitHub, then:
+git clone --depth=1 git@github.com:YOUR_USERNAME/plugin-store.git
+cd plugin-store
 plugin-store init <your-plugin-name>
 ```
 
-This creates `submissions/<your-plugin-name>/` with a complete template:
+This creates `skills/<your-plugin-name>/` with a complete template:
 
 ```
-submissions/<your-plugin-name>/
+skills/<your-plugin-name>/
 ├── plugin.yaml           # Plugin manifest (fill in your details)
 ├── skills/<name>/
 │   └── SKILL.md          # Skill definition (built-in onchainos demo)
@@ -268,7 +268,7 @@ SKILL.md teaches the AI agent how to use your plugin. Required sections:
 ### Step 4: Validate locally
 
 ```bash
-plugin-store lint ./submissions/<your-plugin-name>/
+plugin-store lint ./skills/<your-plugin-name>/
 ```
 
 Fix all errors (❌), then re-run until you see ✓. Warnings (⚠️) are advisory.
@@ -277,12 +277,12 @@ Fix all errors (❌), then re-run until you see ✓. Warnings (⚠️) are advis
 
 ```bash
 git checkout -b submit/<your-plugin-name>
-git add submissions/<your-plugin-name>/
+git add skills/<your-plugin-name>/
 git commit -m "[new-plugin] <your-plugin-name> v1.0.0"
 git push origin submit/<your-plugin-name>
 ```
 
-Then create a PR from your fork to `okx/plugin-store-community`. Each PR must contain exactly one plugin.
+Then create a PR from your fork to `okx/plugin-store`. Each PR must contain exactly one plugin.
 
 ### What happens after submission
 
@@ -319,7 +319,7 @@ plugin-store install <your-plugin-name>
 | E122 source_repo format | Use `owner/repo`, not full URL |
 | E123 commit SHA invalid | Must be full 40-char hex from `git rev-parse HEAD` |
 
-Full guide: https://github.com/okx/plugin-store-community/blob/main/PLUGIN_DEVELOPMENT_GUIDE.md
+Full guide: https://github.com/okx/plugin-store/blob/main/docs/FOR-DEVELOPERS.md
 
 ---
 
