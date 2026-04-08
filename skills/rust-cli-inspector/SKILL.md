@@ -2,7 +2,7 @@
 name: rust-cli-inspector
 description: "Rust CLI querying ETH price via Onchain OS"
 version: "1.1.0"
-author: "OKX"
+author: "yz06276"
 tags: [rust, onchainos]
 ---
 
