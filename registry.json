@@ -383,6 +383,34 @@
       }
     },
     {
+      "name": "pump-fun",
+      "version": "0.1.0",
+      "description": "Buy and sell tokens on pump.fun bonding curves on Solana mainnet",
+      "author": {
+        "name": "skylavis-sky"
+      },
+      "category": "utility",
+      "tags": [
+        "solana"
+      ],
+      "type": "official",
+      "components": {
+        "skill": {
+          "repo": "okx/plugin-store",
+          "dir": "skills/pump-fun"
+        }
+      },
+      "link": "https://github.com/okx/plugin-store",
+      "extra": {
+        "chains": [
+          "solana",
+          "base"
+        ],
+        "protocols": [],
+        "risk_level": "medium"
+      }
+    },
+    {
       "name": "rust-cli-inspector",
       "version": "1.1.0",
       "description": "Rust CLI querying ETH price via Onchain OS",
