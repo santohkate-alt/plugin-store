@@ -101,8 +101,8 @@ Do NOT use for: PancakeSwap V3 swaps (use pancakeswap skill), concentrated liqui
 ## Architecture
 
 - Read ops (quote, get-pair, get-reserves, lp-balance) → direct `eth_call` via public RPC; no confirmation needed
-- Write ops (swap, add-liquidity, remove-liquidity) → after user confirmation, submits via `onchainos wallet contract-call --force`
-- ERC-20 approvals → manually encoded `approve()` calldata, submitted via `onchainos wallet contract-call --force`
+- Write ops (swap, add-liquidity, remove-liquidity) → after user confirmation, submits via `onchainos wallet contract-call`
+- ERC-20 approvals → manually encoded `approve()` calldata, submitted via `onchainos wallet contract-call`
 - Supports BSC (chain 56, default) and Base (chain 8453)
 - V2 uses constant-product xyk formula; LP tokens are standard ERC-20 (not NFTs); fixed 0.25% swap fee
 
@@ -191,8 +191,8 @@ pancakeswap-v2 --chain 56 swap --token-in USDT --token-out CAKE --amount-in 1000
 **Execution flow:**
 1. Run `--dry-run` to preview the swap calldata and expected output
 2. **Ask user to confirm** the swap details (tokenIn, tokenOut, amountIn, amountOutMin, slippage)
-3. If tokenIn is an ERC-20 and allowance is insufficient, first submit an approve tx via `onchainos wallet contract-call --force`; **ask user to confirm** the approval
-4. Submit swap via `onchainos wallet contract-call --force`
+3. If tokenIn is an ERC-20 and allowance is insufficient, first submit an approve tx via `onchainos wallet contract-call`; **ask user to confirm** the approval
+4. Submit swap via `onchainos wallet contract-call`
 5. Report txHash and BscScan/BaseScan link
 
 **Supported swap variants:**
@@ -240,8 +240,8 @@ pancakeswap-v2 --chain 56 add-liquidity --token-a CAKE --token-b BNB --amount-a 
 1. Check current pair reserves and ratio
 2. Run `--dry-run` to preview the transaction
 3. **Ask user to confirm** the amounts and LP token receipt before proceeding
-4. Approve Router02 to spend tokenA/tokenB via `onchainos wallet contract-call --force` (if needed); **ask user to confirm** each approval
-5. Submit `addLiquidity` or `addLiquidityETH` via `onchainos wallet contract-call --force`
+4. Approve Router02 to spend tokenA/tokenB via `onchainos wallet contract-call` (if needed); **ask user to confirm** each approval
+5. Submit `addLiquidity` or `addLiquidityETH` via `onchainos wallet contract-call`
 6. Report txHash and LP tokens received
 
 ---
@@ -273,8 +273,8 @@ pancakeswap-v2 --chain 56 remove-liquidity --token-a CAKE --token-b USDT --liqui
 2. Display summary: LP amount, expected tokenA and tokenB out
 3. Run `--dry-run` to preview calldata
 4. **Ask user to confirm** the removal details before proceeding
-5. Approve LP tokens to Router02 via `onchainos wallet contract-call --force`; **ask user to confirm**
-6. Submit `removeLiquidity` or `removeLiquidityETH` via `onchainos wallet contract-call --force`
+5. Approve LP tokens to Router02 via `onchainos wallet contract-call`; **ask user to confirm**
+6. Submit `removeLiquidity` or `removeLiquidityETH` via `onchainos wallet contract-call`
 7. Report txHash
 
 ---
@@ -339,7 +339,7 @@ For Base (8453): WETH `0x4200000000000000000000000000000000000006`, USDC `0x8335
 |-------|-------------|-----|
 | "No V2 liquidity path found" | No direct or WBNB-routed pair exists | Use a different token pair or check on BscScan |
 | "You have no LP tokens for this pair" | Wallet has 0 LP balance | Verify correct wallet address and chain |
-| txHash is "pending", never broadcasts | Missing `--force` flag | Plugin always adds `--force`; check onchainos version |
+| txHash is "pending", never broadcasts | Transaction not broadcast | Ensure onchainos is authenticated and retry |
 | Swap reverts on-chain | Slippage too tight or stale price | Increase `--slippage-bps` (e.g. 100 for 1%) |
 | "Cannot resolve wallet address" | onchainos not logged in | Run `onchainos wallet login` or pass `--from <address>` |
 | "Unsupported chain ID" | Chain not 56 or 8453 | Use `--chain 56` (BSC) or `--chain 8453` (Base) |

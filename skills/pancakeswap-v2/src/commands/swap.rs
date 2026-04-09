@@ -89,7 +89,7 @@ pub async fn run(args: SwapArgs) -> Result<serde_json::Value> {
             cfg.router02,
             &calldata,
             args.from.as_deref(),
-            Some(args.amount_in as u64),
+            Some(args.amount_in as u128),
             args.dry_run,
         )
         .await?;

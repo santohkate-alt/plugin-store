@@ -22,7 +22,7 @@ pub async fn wallet_contract_call(
     to: &str,
     input_data: &str,
     from: Option<&str>,
-    amt: Option<u64>,
+    amt: Option<u128>,
     dry_run: bool,
 ) -> anyhow::Result<Value> {
     if dry_run {

@@ -77,7 +77,7 @@ pub async fn run(args: AddLiquidityArgs) -> Result<serde_json::Value> {
         let calldata = build_add_liquidity_eth(&token_addr, token_amount, token_min, eth_min, &wallet, deadline);
         let result = onchainos::wallet_contract_call(
             args.chain_id, cfg.router02, &calldata,
-            args.from.as_deref(), Some(eth_amount as u64), args.dry_run,
+            args.from.as_deref(), Some(eth_amount as u128), args.dry_run,
         ).await?;
         let tx_hash = onchainos::extract_tx_hash(&result).to_string();
         steps.push(json!({
