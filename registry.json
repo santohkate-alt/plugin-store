@@ -241,6 +241,31 @@
       }
     },
     {
+      "name": "pancakeswap",
+      "version": "0.1.0",
+      "description": "Swap tokens and manage liquidity on PancakeSwap V3",
+      "author": {
+        "name": "GeoGu360"
+      },
+      "category": "utility",
+      "tags": [],
+      "type": "official",
+      "components": {
+        "skill": {
+          "repo": "okx/plugin-store",
+          "dir": "skills/pancakeswap"
+        }
+      },
+      "link": "https://github.com/okx/plugin-store",
+      "extra": {
+        "chains": [
+          "base"
+        ],
+        "protocols": [],
+        "risk_level": "medium"
+      }
+    },
+    {
       "name": "plugin-store",
       "version": "1.0.0",
       "description": "The main on-chain DeFi skill. Discover, install, update, and manage plugins — including trading strategies, DeFi integrations, and developer tools — across Claude Code, Cursor, and OpenClaw.",
