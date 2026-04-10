@@ -187,6 +187,11 @@
       }
     },
     {
+      "name": "poc-test",
+      "description": "Plugin: poc-test",
+      "source": "./skills/poc-test"
+    },
+    {
       "name": "polymarket",
       "description": "Trade prediction markets on Polymarket — buy and sell YES/NO outcome tokens on Polygon",
       "source": "./skills/polymarket",
